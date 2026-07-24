@@ -1,4 +1,4 @@
-package noemicoppotelli.project4_backend.model;
+package noemicoppotelli.project4_backend.enums;
 
 public enum TipoPostazione {
     PRIVATO,

@@ -1,7 +1,7 @@
 package noemicoppotelli.project4_backend.repository;
 
-import noemicoppotelli.project4_backend.model.Postazione;
-import noemicoppotelli.project4_backend.model.TipoPostazione;
+import noemicoppotelli.project4_backend.entities.Postazione;
+import noemicoppotelli.project4_backend.enums.TipoPostazione;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -14,4 +14,6 @@ public interface PostazioneRepository extends JpaRepository<Postazione, Long> {
     List<Postazione> findByTipo(TipoPostazione tipo);
 
     List<Postazione> findByEdificio_Citta(String citta);
+
+    boolean existsByCodiceUnivoco(String codiceUnivoco);
 }

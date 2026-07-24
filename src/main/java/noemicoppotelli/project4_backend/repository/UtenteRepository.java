@@ -1,6 +1,6 @@
 package noemicoppotelli.project4_backend.repository;
 
-import noemicoppotelli.project4_backend.model.Utente;
+import noemicoppotelli.project4_backend.entities.Utente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
